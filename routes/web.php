@@ -11,7 +11,10 @@
 |
 */
 
-/*Route::get('/', function () {
+Route::get('/', function () {
     return view('welcome');
 });
-*/
+//トップページ
+Route::get('top', function () {
+    return view('top');
+});
