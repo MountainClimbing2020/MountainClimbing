@@ -120,21 +120,21 @@
                 <span>XXXXXX</span></div>
             <div class="slide_btn">
                 <a href="#">詳しくはコチラ</a></div>
-                        <img class="sp-image" src="http://localhost:8888/MountainClimbing/storage/app/public/image/top/tateyama.jp" data-small="http://localhost:8888/MountainClimbing/storage/app/public/image/top/tateyama.jpg"/>
+                        <img class="sp-image" src="http://localhost:8888/MountainClimbing/storage/app/public/image/top/tateyama.jpg" data-small="http://localhost:8888/MountainClimbing/storage/app/public/image/top/tateyama.jpg"/>
             </div><!-- /sp-slide -->
             <div class="sp-slide">
                 <div class="top_catch">乗鞍岳<br>
                     <span>XXXXX</span>
             </div>
             <div class="slide_btn"><a href="#">詳しくはコチラ</a></div>
-                        <img class="sp-image" src="http://localhost:8888/MountainClimbing/storage/app/public/image/top/norikueatatamidaira.jpg" data-small="http://localhost:8888/MountainClimbing/storage/app/public/image/top/norikueatatamidaira.jpg"/>
+                        <img class="sp-image" src="http://localhost:8888/MountainClimbing/storage/app/public/image/top/norikuratatami.jpg" data-small="http://localhost:8888/MountainClimbing/storage/app/public/image/top/norikuratatami.jpg"/>
             </div><!-- /sp-slide -->
             <div class="sp-slide">
                 <div class="top_catch">至仏山<br>
                     <span>XXXXX</span>
                 </div>
                 <div class="slide_btn"><a href="#">詳しくはコチラ</a></div>
-                            <img class="sp-image" src="http://localhost:8888/MountainClimbing/storage/app/public/image/top/norikueatatamidaira.jpg" data-small="http://localhost:8888/MountainClimbing/storage/app/public/image/top/shibutu.jpg"/>
+                            <img class="sp-image" src="http://localhost:8888/MountainClimbing/storage/app/public/image/top/shibutu.jpg" data-small="http://localhost:8888/MountainClimbing/storage/app/public/image/top/shibutu.jpg"/>
             </div><!-- /sp-slide -->
         </div><!-- /slider-pro -->
         <div class="pickup">
@@ -152,7 +152,7 @@
                             <p>最新のイベント情報を随時更新中です。詳しくはこちらからご覧ください。</p></a>
                 </li>
                 <li class="effect">
-                    <a href="#" ><img src="http://localhost:8888/MountainClimbing/storage/app/public/image/top/event_3.jpeg" alt="サンプル画像" >
+                    <a href="#" ><img src="http://localhost:8888/MountainClimbing/storage/app/public/image/top/event_3.JPG" alt="サンプル画像" >
                         <span class="pu_icon">NEW!</span>
                         <div class="pu_title">最新イベント情報</div>
                             <p>最新のイベント情報を随時更新中です。詳しくはこちらからご覧ください。</p></a>
