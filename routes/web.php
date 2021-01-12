@@ -18,3 +18,9 @@ Route::get('/', function () {
 Route::get('top', function () {
     return view('top');
 });
+
+//掲示板
+Route::get('report/board', function () {
+    return view('report.board');
+});
+
