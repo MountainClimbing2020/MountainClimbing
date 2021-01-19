@@ -16,6 +16,7 @@
         <title>登山しよう</title>
         <meta name="Keywords" content="登山、山登り、MountainClimbing" />
         <meta name="Description" content="登山しよう　好きな山を見つけよう" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <link rel="stylesheet" href="http://localhost:8888/MountainClimbing/public/css/style.css" />
         <link rel="stylesheet" href="http://localhost:8888/MountainClimbing/public/css/slider-pro.css"/>
         <link href="https://fonts.googleapis.com/earlyaccess/sawarabimincho.css" rel="stylesheet" />
@@ -24,7 +25,6 @@
         <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
     </head>
     <body>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <script>
             $(function(){
                 var loader = $('.loader-wrap');
@@ -58,20 +58,20 @@
             <nav id="g_navi">
                 <ul class="navi_base">
                 <li>
-                    <a href="index.html">HOME</a>
+                    <a href="home">HOME</a>
                 </li>
                 <li>
-                    <a class="ac_menu">登山の基本</a>
+                    <a>登山の基本</a>
                         <div class="ac_list">
                             <ul>
-                                <li><a href="#">登山の心得</a></li>
-                                <li><a href="#">持ち物</a></li>
-                                <li><a href="#">準備する物</a></li>
+                                <li><a href="basic/kokoroe">登山の心得</a></li>
+                                <li><a href="basic/mochimono">持ち物</a></li>
+                                <li><a href="basic/prepare">準備する物</a></li>
                             </ul>
                         </div>
                 </li>
                 <li>
-                    <a class="ac_menu">地域から探す</a></a>
+                    <a>地域から探す</a></a>
                         <div class="ac_list">
                             <ul>
                                 <li><a href="#">北海道・東北</a></li>
@@ -85,19 +85,19 @@
                         </div>
                 </li>
                 <li>
-                    <a class="ac_menu">計画を立てる</a></a>
+                    <a>計画を立てる</a></a>
                         <div class="ac_list">
                             <ul>
-                                <li><a href="#">計画のアドバイス</a></li>
-                                <li><a href="#">タイムスケジュールサンプル</a></li>
+                                <li><a href="plan/advice">計画のアドバイス</a></li>
+                                <li><a href="plan/sample">タイムスケジュールサンプル</a></li>
                             </ul>
                         </div>
                 </li>
                 <li>
-                    <a href="ac_menu.html">みんなの登山報告</a>
+                    <a>みんなの登山報告</a>
                         <div class="ac_list">
                             <ul>
-                                <li><a href="#">掲示板</a></li>
+                                <li><a href="report/board">掲示板</a></li>
                                 <li><a href="#">写真館</a></li>
                                 <li><a href="#">登山具サイトへのリンク</a></li>
                             </ul>
@@ -127,7 +127,7 @@
                     <span>XXXXX</span>
             </div>
             <div class="slide_btn"><a href="#">詳しくはコチラ</a></div>
-                        <img class="sp-image" src="http://localhost:8888/MountainClimbing/storage/app/public/image/top/norikuratatami.jpg" data-small="http://localhost:8888/MountainClimbing/storage/app/public/image/top/norikuratatami.jpg"/>
+                        <img class="sp-image" src="http://localƒhost:8888/MountainClimbing/storage/app/public/image/top/norikuratatami.jpg" data-small="http://localhost:8888/MountainClimbing/storage/app/public/image/top/norikuratatami.jpg"/>
             </div><!-- /sp-slide -->
             <div class="sp-slide">
                 <div class="top_catch">至仏山<br>
@@ -243,30 +243,30 @@
         <div class="to_top">
             <a href="#" title="トップへ戻る"><i class="fas fa-chevron-up"></i></a>
         </div>
-        <script src="http://localhost:8888/MountainClimbing/public/js/jquery.sliderPro.min.js"></script>
-        <script src="http://localhost:8888/MountainClimbing/public/js/jquery.inview.min.js"></script>
-        <script src="http://localhost:8888/MountainClimbing/public/js/script.js"></script>
-        <script>
-            $( document ).ready(function( $ ) {
-                $('#top_slide').sliderPro({
-                    width: 1400,
-                    arrows: true,
-                    buttons: true,
-                    aspectRatio: 1.8,
-                    slideDistance:0,
-                    fadeDuration: 1000,
-                    smallSize: 640,
-                    visibleSize:"100%",
-                    breakpoints:
-                    {
-                        640:{
-                        width: '100%',
-                        arrows: false,
-                        aspectRatio: 1.6,
-                        }
-                    }
-                });
-            });
-        </script>
     </body>
+    <script src="http://localhost:8888/MountainClimbing/public/js/jquery.sliderPro.min.js"></script>
+    <script src="http://localhost:8888/MountainClimbing/public/js/jquery.inview.min.js"></script>
+    <script src="http://localhost:8888/MountainClimbing/public/js/script.js"></script>
+    <script>
+        $( document ).ready(function( $ ) {
+            $('#top_slide').sliderPro({
+                width: 1400,
+                arrows: true,
+                buttons: true,
+                aspectRatio: 1.8,
+                slideDistance:0,
+                fadeDuration: 1000,
+                smallSize: 640,
+                visibleSize:"100%",
+                breakpoints:
+                {
+                    640:{
+                    width: '100%',
+                    arrows: false,
+                    aspectRatio: 1.6,
+                    }
+                }
+            });
+        });
+            </script>
 </html>

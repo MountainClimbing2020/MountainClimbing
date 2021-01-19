@@ -10,17 +10,48 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/', function () {
-    return view('welcome');
-});
 //トップページ
 Route::get('top', function () {
     return view('top');
 });
+//HOME
+Route::get('home', function () {
+    return view('home');
+});
+//登山の基本
+Route::get('basic/kokoroe', function () {
+    return view('basic/kokoroe');
+});
+Route::get('basic/mochimono', function () {
+    return view('basic/kokoroe');
+});
+Route::get('basic/prepare', function () {
+    return view('basic/prepare');
+});
 
-//掲示板
+//地域から探す
+Route::get('region/search', function () {
+    return view('region/search');
+});
+
+//計画を立てる
+Route::get('plan/advice', function () {
+    return view('report.advice');
+});
+Route::get('plan/sample', function () {
+    return view('report.sample');
+});
+
+
+//みんなの登山報告
 Route::get('report/board', function () {
     return view('report.board');
 });
+Route::get('report/picture', function () {
+    return view('report.picture');
+});
+Route::get('report/goodslink', function () {
+    return view('report.goodslink');
+});
+
 
