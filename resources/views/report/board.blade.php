@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
   <meta charset="utf-8">
-  <title>画像アップロード</title>
+  <title>情報交換掲示板</title>
   <style>
   body {
     text-align: center;
@@ -11,7 +11,7 @@
   </style>
 </head>
 <body>
- <p>画像掲示板作成(仮）</p>
+ <h1 align="left">情報交換掲示板</h1>
 
 </body>
 </html>
