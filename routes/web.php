@@ -47,9 +47,10 @@ Route::get('plan/sample', function () {
 Route::get('report/board', function () {
     return view('report.board');
 });
-Route::get('report/picture', function () {
-    return view('report.picture');
-});
+//写真館
+Route::get('report/', 'PictureController@index');
+Route::post('report/','PictureController@store' );
+//登山サイトへリンク
 Route::get('report/goodslink', function () {
     return view('report.goodslink');
 });

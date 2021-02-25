@@ -22,6 +22,7 @@
         <link href="https://fonts.googleapis.com/earlyaccess/sawarabimincho.css" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
         <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
     </head>
     <body>
@@ -37,6 +38,7 @@
                     loader.fadeOut();
                 },10000);
             });
+
         </script>
         <div class="loader-wrap">
             <div class="loader">Loading...</div>
@@ -98,7 +100,7 @@
                         <div class="ac_list">
                             <ul>
                                 <li><a href="report/board">掲示板</a></li>
-                                <li><a href="report/picture">写真館</a></li>
+                                <li><a href="report/">写真館</a></li>
                                 <li><a href="report/goodslink">登山具サイトへのリンク</a></li>
                             </ul>
                         </div>
