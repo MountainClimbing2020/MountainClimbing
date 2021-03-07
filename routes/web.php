@@ -13,7 +13,7 @@
 //トップページ
 Route::get('top', function () {
     return view('top');
-});
+})->name('top');
 //HOME
 Route::get('home', function () {
     return view('home');
@@ -44,12 +44,13 @@ Route::get('plan/sample', function () {
 
 
 //みんなの登山報告
-Route::get('report/board', function () {
-    return view('report.board');
-});
-//写真館
+//oute::get('report/board','ReportPostController@index')->name('report_board');
+//写真館（画像アップロード機能のみ）
 Route::get('report/', 'PictureController@index');
 Route::post('report/','PictureController@store' );
+//写真館(掲示板機能アリ)
+Route::get('report/picture','PicturePostController@index')->name('pictureboard');
+Route::resource('posts', 'PicturePostController')->name('picturestore');
 //登山サイトへリンク
 Route::get('report/goodslink', function () {
     return view('report.goodslink');
