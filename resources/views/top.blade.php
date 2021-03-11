@@ -101,7 +101,7 @@
                             <ul>
                                 <li><a href="report/board">掲示板</a></li>
                                 <li><a href="report/">写真館＿１</a></li>
-                                <li><a href="report/picture">写真館＿２</a></li>
+                                <li><a href="report/pictureboard">写真館＿２</a></li>
                                 <li><a href="report/goodslink">登山具サイトへのリンク</a></li>
                             </ul>
                         </div>
