@@ -44,13 +44,47 @@ Route::get('plan/sample', function () {
 
 
 //みんなの登山報告
-//oute::get('report/board','ReportPostController@index')->name('report_board');
-//写真館（画像アップロード機能のみ）
+
+//写真館_1（画像アップロード機能のみ）
 Route::get('report/', 'PictureController@index');
 Route::post('report/','PictureController@store' );
-//写真館(掲示板機能アリ)
-Route::get('report/picture','PicturePostController@index')->name('pictureboard');
-Route::resource('posts', 'PicturePostController')->name('picturestore');
+//写真館_2(掲示板機能アリ)
+//投稿
+Route::get('report/pictureboard', function(){
+    return view('report/picboardhome', ['posts' => App\PostPicture::latest('id')->get()]);
+});
+Route::post('report/pictureboard', function(){
+    $post = new App\PostPicture();
+    $post->title = request('title');
+    $post->body = request('body');
+    $post->save();
+
+    $files = request('files');
+    if($files) foreach ((array)$files as $file) {
+        $file->store('public');
+        $post->pictures()->create(['filename'=> $file->hashName()]);
+    }
+    return redirect('report/pictureboard');
+});
+/* //コメント
+Route::post('report/piccomments', function(){
+    $comment = new App\PicComment();
+    $comment ->post_id =request('post_id');
+    $comment->body = request('body');
+    $comment->save();
+
+    $files = request('files');
+    if ($files) foreach ((array)$files as $file) {
+        $file->store('public');
+        $comment->pictures()->create(['filename' => $file->hashName()] );
+    }
+    return redirect('report/pictureboard');
+});
+ */
+
+
+Route::get('report/','PicturePostController@index')->name('pictureboard');
+//oute::resource('posts', 'PicturePostController')->name('picturestore');
 //登山サイトへリンク
 Route::get('report/goodslink', function () {
     return view('report.goodslink');
