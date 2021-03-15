@@ -50,11 +50,10 @@ Route::get('report/', 'PictureController@index');
 Route::post('report/','PictureController@store' );
 //写真館_2(掲示板機能アリ)
 //投稿
-Route::get('report/pictureboard', function(){
-    return view('report/picboardhome', ['posts' => App\PostPicture::latest('id')->get()]);
-});
-Route::post('report/pictureboard', function(){
-    $post = new App\PostPicture();
+Route::get('report/pictureboard','PictureboardController@index' );
+Route::post('report/pictureboard','PictureboardController@post' );
+
+/*     $post = new App\PostPicture();
     $post->title = request('title');
     $post->body = request('body');
     $post->save();
@@ -66,6 +65,7 @@ Route::post('report/pictureboard', function(){
     }
     return redirect('report/pictureboard');
 });
+*/
 /* //コメント
 Route::post('report/piccomments', function(){
     $comment = new App\PicComment();
