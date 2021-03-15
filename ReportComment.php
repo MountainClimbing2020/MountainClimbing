@@ -6,13 +6,13 @@ use Illuminate\Database\Eloquent\Model;
 
 class ReportComment extends Model
 {
-    //
+
     protected $fillable =[
         'body',
     ];
 
     public function post()
     {
-        return $this->belongsTo('App\Post');
+        return $this->belongsTo('App\ReportPost');
     }
 }
